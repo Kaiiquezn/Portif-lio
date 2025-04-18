@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio - João Silva</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #bbb;
+    }
+
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #00bcd4;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      transition: transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background: #1f1f1f;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>João Silva</h1>
+    <p>Desenvolvedor Front-End | Criador de interfaces modernas</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou um desenvolvedor apaixonado por criar experiências digitais incríveis. Trabalho com HTML, CSS, JavaScript e estou sempre aprendendo novas tecnologias para deixar meus projetos ainda mais impactantes.</p>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Landing Page Criativa</h3>
+        <p>Uma página de apresentação moderna com animações suaves e layout responsivo.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfólio Dark Mode</h3>
+        <p>Um portfólio pessoal com visual noturno e efeitos interativos em CSS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Mini Blog</h3>
+        <p>Interface de blog com posts, responsividade e navegação fluida.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Você pode entrar em contato comigo pelo email <a href="mailto:joao@email.com">joao@email.com</a> ou pelo meu <a href="#">LinkedIn</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 João Silva. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
